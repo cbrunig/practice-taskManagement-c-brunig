@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 
 function TaskList() {
     const {datasetId} = useParams();
+    const [task] = [...dataset].filter(obj => obj.id == id);
 
     const dataset = [
         {id: 1, title: "First task", description: "Do this first"},
